@@ -1,9 +1,9 @@
-const input = document.querySelector(".input-box");
-const action = document.querySelector(".action");
-const city = document.querySelector(".city-name");
-const temp = document.querySelector(".temp");
-const wind = document.querySelector(".wind");
-const dayNight = document.querySelector(".day-night");
+var input = document.querySelector(".input-box");
+var action = document.querySelector(".action");
+var city = document.querySelector(".city-name");
+var temp = document.querySelector(".temp");
+var wind = document.querySelector(".wind");
+var dayNight = document.querySelector(".day-night");
 
 
 action.addEventListener('click', f => {
