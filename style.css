@@ -1,0 +1,92 @@
+* {
+    margin: 0px;
+}
+
+body {
+    background-image: url("\images/sample.jpg");
+    background-repeat: repeat-x;
+}
+
+.container {
+    width: 60%;
+    margin-left: 20%;
+}
+
+.header {
+    height: 100px;
+}
+
+.header p {
+    color: white;
+    font-family: sans-serif;
+    font-size: 24px;
+    text-align: center;
+    margin-top: 40px;
+    font-weight: 300;
+}
+
+.header p b {
+    font-size: 35px;
+}
+
+.input-box {
+    width: 50%;
+    height: 30px;
+    margin-left: 25%;
+    font-size: 20px;
+    font-family: sans-serif;
+    font-weight: 300;
+}
+
+.action {
+    height: 30px;
+    width: 141px;
+    margin-left: 41%;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    background-color: aquamarine;
+}
+
+.city-name {
+    color: white;
+    font-size: 50px;
+    font-family: sans-serif;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.result {
+    color: white;
+    font-size: 50px;
+    font-family: sans-serif;
+    font-weight: 700;
+    text-align: center;
+    padding-bottom: 70px;
+
+}
+
+.temp,
+.wind,
+.day-night {
+
+    float: left;
+    width: 33.33%;
+}
+
+
+.result-down {
+    color: antiquewhite;
+    font-size: 30px;
+    font-family: sans-serif;
+    font-weight: 700;
+    text-align: center;
+}
+
+.temp-down,
+.wind-down,
+.day-down {
+    float: left;
+    width: 33.33%;
+    opacity: .60;
+}
