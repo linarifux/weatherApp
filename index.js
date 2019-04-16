@@ -11,7 +11,7 @@ action.addEventListener('click', f => {
     var KEY = "fd837d12a98443f2a9b193101192401";
     var BASE = "https://api.apixu.com/v1";
     if (input.value === "") {
-        window.alert("please enter a valid city name")
+        window.alert("Come on, Put a city name first")
     } else {
         fetch(`${BASE}/current.json?key=${KEY}&q=${q}`)
             .then(response => response.json())

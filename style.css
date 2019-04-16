@@ -36,6 +36,8 @@ body {
     font-size: 20px;
     font-family: sans-serif;
     font-weight: 300;
+    border: 1px solid #cccccc;
+    border-radius: 3px;
 }
 
 .action {
@@ -44,7 +46,20 @@ body {
     margin-left: 41%;
     margin-top: 20px;
     margin-bottom: 50px;
-    background-color: aquamarine;
+    background-color: #2c3e50;
+    border: 1px solid #cccccc;
+    border-radius: 3px;
+}
+
+.action :hover {
+    color: #cccccc;
+}
+
+.action p {
+    font-family: sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    color: white;
 }
 
 .city-name {
