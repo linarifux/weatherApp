@@ -9,11 +9,10 @@ var dayNight = document.querySelector(".day-night");
 action.addEventListener('click', f => {
     var q = input.value;
     var KEY = "9e6fba673a9368e1f54a9d58ba97dc2f";
-    var BASE = "http://api.weatherstack.com/";
     if (input.value === "") {
         window.alert("Please, enter a city name")
     } else {
-        fetch(`${BASE}/current.json?key=${KEY}&q=${q}`)
+        fetch(`http://api.weatherstack.com/current?access_key=${KEY}&query=${q}`)
             .then(response => response.json())
             .then(boom => {
                 city.innerHTML = `${boom.location.name}`;
