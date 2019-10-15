@@ -8,8 +8,8 @@ var dayNight = document.querySelector(".day-night");
 
 action.addEventListener('click', f => {
     var q = input.value;
-    var KEY = "fd837d12a98443f2a9b193101192401";
-    var BASE = "https://api.apixu.com/v1";
+    var KEY = "9e6fba673a9368e1f54a9d58ba97dc2f";
+    var BASE = "http://api.weatherstack.com/";
     if (input.value === "") {
         window.alert("Come on, Put a city name first")
     } else {
