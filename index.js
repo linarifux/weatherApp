@@ -11,14 +11,14 @@ action.addEventListener('click', f => {
     var KEY = "9e6fba673a9368e1f54a9d58ba97dc2f";
     var BASE = "http://api.weatherstack.com/";
     if (input.value === "") {
-        window.alert("Come on, Put a city name first")
+        window.alert("Please, enter a city name")
     } else {
         fetch(`${BASE}/current.json?key=${KEY}&q=${q}`)
             .then(response => response.json())
             .then(boom => {
                 city.innerHTML = `${boom.location.name}`;
-                temp.innerHTML = `${boom.current.temp_c} &#8451;`;
-                wind.innerHTML = `${boom.current.wind_kph} km/h`;
+                temp.innerHTML = `${boom.current.temperature} &#8451;`;
+                wind.innerHTML = `${boom.current.wind_speed} km/h`;
                 if (boom.current.is_day === 0) {
                     dayNight.innerHTML = "Night";
                 } else {
