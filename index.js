@@ -8,23 +8,23 @@ var dayNight = document.querySelector(".day-night");
 
 action.addEventListener('click', f => {
     var q = input.value;
-    var KEY = "9e6fba673a9368e1f54a9d58ba97dc2f";
+    var KEY = "ba94c4d1e85eb7c3f7ead9e2427a4cd1";
     if (input.value === "") {
         window.alert("Please, enter a city name")
     } else {
-        const data = fetch(`http://api.weatherstack.com/current?access_key=${KEY}&query=${q}`)
+        const data = fetch(`api.openweathermap.org/data/2.5/weather?q=${q}&appid=${KEY}`)
             .then(response => response.json())
-            .then(boom => {
-                console.log(boom);
+            .then(result => {
+                console.log(result);
 
-                city.innerHTML = `${boom.location.name}`;
-                temp.innerHTML = `${boom.current.temperature} &#8451;`;
-                wind.innerHTML = `${boom.current.wind_speed} km/h`;
-                if (boom.current.is_day === 0) {
-                    dayNight.innerHTML = "Night";
-                } else {
-                    dayNight.innerHTML = "Day";
-                }
+                city.innerHTML = `${result.name}`;
+                temp.innerHTML = `${result.main.temp}`;
+                wind.innerHTML = `${result.wind.speed} km/h`;
+                // if (result.current.is_day === 0) {
+                //     dayNight.innerHTML = "Night";
+                // } else {
+                //     dayNight.innerHTML = "Day";
+                // }
             })
     }
 
